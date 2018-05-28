@@ -7,6 +7,90 @@ menu.DebugLevel=Core Debug Level
 
 ##############################################################
 
+esp32PRX.name=ESP32 Dev PRX
+
+esp32PRX.upload.tool=esptool
+esp32PRX.upload.maximum_size=2031616
+esp32PRX.upload.maximum_data_size=294912
+esp32PRX.upload.wait_for_upload_port=true
+esp32PRX.serial.disableDTR=true
+esp32PRX.serial.disableRTS=true
+
+esp32PRX.build.mcu=esp32
+esp32PRX.build.core=esp32
+esp32PRX.build.variant=esp32
+esp32PRX.build.board=ESP32_DEV
+
+esp32PRX.build.f_cpu=240000000L
+esp32PRX.build.flash_size=4MB
+esp32PRX.build.flash_freq=40m
+esp32PRX.build.flash_mode=dio
+esp32PRX.build.boot=dio
+esp32PRX.build.partitions=minispiffs
+
+esp32PRX.menu.FlashMode.qio=QIO
+esp32PRX.menu.FlashMode.qio.build.flash_mode=dio
+esp32PRX.menu.FlashMode.qio.build.boot=qio
+esp32PRX.menu.FlashMode.dio=DIO
+esp32PRX.menu.FlashMode.dio.build.flash_mode=dio
+esp32PRX.menu.FlashMode.dio.build.boot=dio
+esp32PRX.menu.FlashMode.qout=QOUT
+esp32PRX.menu.FlashMode.qout.build.flash_mode=dout
+esp32PRX.menu.FlashMode.qout.build.boot=qout
+esp32PRX.menu.FlashMode.dout=DOUT
+esp32PRX.menu.FlashMode.dout.build.flash_mode=dout
+esp32PRX.menu.FlashMode.dout.build.boot=dout
+
+esp32PRX.menu.FlashFreq.80=80MHz
+esp32PRX.menu.FlashFreq.80.build.flash_freq=80m
+esp32PRX.menu.FlashFreq.40=40MHz
+esp32PRX.menu.FlashFreq.40.build.flash_freq=40m
+
+esp32PRX.menu.PartitionScheme.default=Default
+esp32PRX.menu.PartitionScheme.default.build.partitions=default
+esp32PRX.menu.PartitionScheme.no_ota=No OTA (Large APP)
+esp32PRX.menu.PartitionScheme.no_ota.build.partitions=no_ota
+esp32PRX.menu.PartitionScheme.no_ota.upload.maximum_size=2097152
+esp32PRX.menu.PartitionScheme.min_spiffs=Minimal SPIFFS (Large APPS with OTA)
+esp32PRX.menu.PartitionScheme.min_spiffs.build.partitions=min_spiffs
+esp32PRX.menu.PartitionScheme.min_spiffs.upload.maximum_size=1966080
+
+esp32PRX.menu.FlashSize.4M=4MB (32Mb)
+esp32PRX.menu.FlashSize.4M.build.flash_size=4MB
+esp32PRX.menu.FlashSize.2M=2MB (16Mb)
+esp32PRX.menu.FlashSize.2M.build.flash_size=2MB
+esp32PRX.menu.FlashSize.2M.build.partitions=minimal
+
+esp32PRX.menu.UploadSpeed.921600=921600
+esp32PRX.menu.UploadSpeed.921600.upload.speed=921600
+esp32PRX.menu.UploadSpeed.115200=115200
+esp32PRX.menu.UploadSpeed.115200.upload.speed=115200
+esp32PRX.menu.UploadSpeed.256000.windows=256000
+esp32PRX.menu.UploadSpeed.256000.upload.speed=256000
+esp32PRX.menu.UploadSpeed.230400.windows.upload.speed=256000
+esp32PRX.menu.UploadSpeed.230400=230400
+esp32PRX.menu.UploadSpeed.230400.upload.speed=230400
+esp32PRX.menu.UploadSpeed.460800.linux=460800
+esp32PRX.menu.UploadSpeed.460800.macosx=460800
+esp32PRX.menu.UploadSpeed.460800.upload.speed=460800
+esp32PRX.menu.UploadSpeed.512000.windows=512000
+esp32PRX.menu.UploadSpeed.512000.upload.speed=512000
+
+esp32PRX.menu.DebugLevel.none=None
+esp32PRX.menu.DebugLevel.none.build.code_debug=0
+esp32PRX.menu.DebugLevel.error=Error
+esp32PRX.menu.DebugLevel.error.build.code_debug=1
+esp32PRX.menu.DebugLevel.warn=Warn
+esp32PRX.menu.DebugLevel.warn.build.code_debug=2
+esp32PRX.menu.DebugLevel.info=Info
+esp32PRX.menu.DebugLevel.info.build.code_debug=3
+esp32PRX.menu.DebugLevel.debug=Debug
+esp32PRX.menu.DebugLevel.debug.build.code_debug=4
+esp32PRX.menu.DebugLevel.verbose=Verbose
+esp32PRX.menu.DebugLevel.verbose.build.code_debug=5
+
+##############################################################
+
 esp32.name=ESP32 Dev Module
 
 esp32.upload.tool=esptool
